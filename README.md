@@ -1,2 +1,1 @@
-# ProZhanng-Java-Note
-note of learning
+note of algorithm learning
