@@ -1,7 +1,4 @@
-package com.learn;
-
-import lombok.Data;
-import org.junit.Test;
+package com.learn.linkedlist;
 
 /**
  * reverse single linked list
@@ -15,7 +12,7 @@ public class ReverseSingleLinkedList {
         ListNode prev = null;
         while (cur != null) {
             ListNode next = cur.next;
-            cur.next = prev;
+            cur.setNext(prev);
             prev = cur;
             cur = next;
         }
@@ -23,12 +20,3 @@ public class ReverseSingleLinkedList {
     }
 }
 
-@Data
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
-}
