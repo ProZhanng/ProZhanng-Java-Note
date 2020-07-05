@@ -18,9 +18,8 @@ public class SwapSingleLinkedListNodesInPairsTest extends BaseLinkedListTest {
     public void swapPairsNode() {
         ListNode head = initLinkedList();
         printLinkedList(head);
-        SwapSingleLinkedListNodesInPairs function = new SwapSingleLinkedListNodesInPairs();
-        ListNode node = function.swapPairsNode(head);
-        System.out.println();
-        printLinkedList(node);
+        DetectCycleReturnCycleNode function = new DetectCycleReturnCycleNode();
+        ListNode node = function.detectCycleWithSlowAndFast(head);
+        System.out.println(node);
     }
 }
